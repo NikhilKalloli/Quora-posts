@@ -38,7 +38,9 @@ let posts = [
     },
 ]
 
-
+app.get("/",(req,res)=>{
+    res.redirect("/posts");
+})
 
 //Index route --> to get data for all posts
 app.get("/posts", (req,res) =>{
